@@ -1,6 +1,6 @@
-# [Live Site](https://github.com/facebook/create-react-app)
+# [Live Site](https://lucent-kashata-03ee9c.netlify.app/)
 
-[https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
+[https://lucent-kashata-03ee9c.netlify.app/](https://lucent-kashata-03ee9c.netlify.app/)
 
 ## Everything that is on this website
 
