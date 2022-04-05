@@ -11,7 +11,7 @@ import Notfound from './components/Notfound/Notfound';
 
 function App() {
   return (
-    <div>
+    <div className=' container'>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -21,8 +21,14 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
+      <footer>
+        <hr />
+        <p className='text-center'>Copyright © 2022 MS Furniture. All right reserved.</p>
+      </footer>
     </div>
+    
   );
 }
+
 
 export default App;
