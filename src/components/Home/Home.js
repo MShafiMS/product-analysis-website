@@ -1,9 +1,14 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import useProducts from '../../hooks/useProducts';
 import Image from '../../images/furniture.jpg';
+import Review from '../Review/Review';
 import './home.css'
 
 const Home = () => {
+
+    const [reviews, setReviews] = useProducts();
     return ( 
         <div>
             <div className='d-flex row mx-auto'>
@@ -17,8 +22,19 @@ const Home = () => {
                     <img className='img-fluid' src={Image} alt="furniture" />
                 </div>
             </div>
-            <div>
+            <div className='container'>
                 <h1 className='text-center'>Customer Reviews</h1>
+                <div className='row'>
+                    {
+                        reviews.slice(0,3).map(review=><Review 
+                            key={review.id}
+                            review={review}
+                            ></Review>)
+                    }
+                </div>
+                <div className='headers'>
+                <Link className='' to="/reviews">See All Reviews</Link>
+                </div>
             </div>
         </div>
     );
