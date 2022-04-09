@@ -11,12 +11,12 @@ const Home = () => {
     const [reviews, setReviews] = useProducts();
     return ( 
         <div>
-            <div className='d-flex row mx-auto'>
-                <div className='col-md-8 text'>
+            <div className='d-flex row mx-auto align-items-center'>
+                <div className='col-md-8 text mb-4'>
                 <h1>Explore Our Furniture</h1>
                 <h1 className='text-danger'>And Home Furnishing Range...!</h1>
                 <p>Whether you just moved into a new home or looking to revamp your current one, we at Regal Furniture are here to inspire you with affordable home furniture solutions, there is a piece of furniture to every corner of your home. Create a home that is perfect for you.</p>
-                <Button variant="outline-danger">Explore</Button>{' '}
+                <Button variant="outline-danger border-2"><span className='fw-bold'>Explore</span></Button>{' '}
                 </div>
                 <div className='col-md-4'>
                     <img className='img-fluid' src={Image} alt="furniture" />
@@ -33,7 +33,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='headers'>
-                <Link className='' to="/reviews">See All Reviews</Link>
+                <Link className='m-0 ps-5 pe-5' to="/reviews">See All Reviews</Link>
                 </div>
             </div>
         </div>

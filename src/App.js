@@ -11,19 +11,21 @@ import Notfound from './components/Notfound/Notfound';
 
 function App() {
   return (
-    <div className=' container'>
+    <div>
       <Header></Header>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/reviews' element={<Reviews></Reviews>}></Route>
-        <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        <Route path='*' element={<Notfound></Notfound>}></Route>
-      </Routes>
+      <div className='container'>
+        
+        <Routes>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/reviews' element={<Reviews></Reviews>}></Route>
+          <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
+          <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+          <Route path='/about' element={<About></About>}></Route>
+          <Route path='*' element={<Notfound></Notfound>}></Route>
+        </Routes>
+      </div>
       <footer>
-        <hr />
-        <p className='text-center'>Copyright © 2022 MS Furniture. All right reserved.</p>
+        <p className='text-center bg-dark text-white p-4 mb-0'>Copyright © 2022 MS Furniture. All right reserved.</p>
       </footer>
     </div>
     

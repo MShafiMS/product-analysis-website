@@ -6,9 +6,9 @@ const Blogs = () => {
         <div>
             <Accordion defaultActiveKey={["0"]} alwaysOpen>
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header><h3>Whats is Content API?</h3></Accordion.Header>
+                    <Accordion.Header><h3>Whats is Context API?</h3></Accordion.Header>
                     <Accordion.Body>
-                    <span className='fw-bold'>Content API:</span>React Context API হল একটি রিঅ্যাক্ট অ্যাপের জন্য কার্যকরভাবে গ্লোবাল ভেরিয়েবল তৈরি করার একটি উপায় যা চারপাশে পাস করা যেতে পারে। Context API দিয়ে props mapping না করেই tree এর নিচের দিকের কোন child component তার উপরের দিকের যেকোন component এ access পাবে। কন্টেক্সট shared data কে global হিসেবে ধরে নেয় যাতে component tree এর সবাই মোটামুটি access পায়।
+                    <span className='fw-bold'>Context API:</span>React Context API হল একটি রিঅ্যাক্ট অ্যাপের জন্য কার্যকরভাবে গ্লোবাল ভেরিয়েবল তৈরি করার একটি উপায় যা চারপাশে পাস করা যেতে পারে। Context API দিয়ে props mapping না করেই tree এর নিচের দিকের কোন child component তার উপরের দিকের যেকোন component এ access পাবে। কন্টেক্সট shared data কে global হিসেবে ধরে নেয় যাতে component tree এর সবাই মোটামুটি access পায়।
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">

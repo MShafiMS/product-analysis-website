@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bar, BarChart, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Mylinechart = () => {
 
@@ -42,28 +42,65 @@ const Mylinechart = () => {
         }
     ]
     return (
-        <div className='d-flex'>
-            <div>
-                <h3 className='text-center text-danger'>Investment VS Revenue</h3>
-                <LineChart width={600} height={400} data={data}>
+        <div className='d-flex row'>
+            <div className='col-md-6'>
+                <h4 className='text-center text-danger'>Investment VS Revenue</h4>
+                <div className='d-flex justify-content-center'>
+                <LineChart width={350} height={300} data={data}>
                     <Line dataKey={'investment'}></Line>
                     <Line dataKey={'revenue'}></Line>
                     <XAxis dataKey="month"></XAxis>
                     <Tooltip />
                     <YAxis></YAxis>
                 </LineChart>
+                </div>
                 
             </div>
-            <div>
-            <h3 className='text-center text-danger'>Investment VS Revenue</h3>
-                <BarChart width={600} height={400} data={data}>
-                    <Bar dataKey="investment" fill="#8884d8" />
-                    <Bar dataKey="revenue" fill="#84d8c6" />
-                    <XAxis dataKey="month"></XAxis>
-                    <Tooltip></Tooltip>
-                    <YAxis></YAxis>
-                </BarChart>
+            <div className='col-md-6'>
+                <h4 className='text-center text-danger'>Investment VS Revenue</h4>
+                    <div className='d-flex justify-content-center'>
+                    <BarChart width={350} height={300} data={data}>
+                        <Bar dataKey="investment" fill="#8884d8" />
+                        <Bar dataKey="revenue" fill="#84d8c6" />
+                        <XAxis dataKey="month"></XAxis>
+                        <Tooltip></Tooltip>
+                        <YAxis></YAxis>
+                    </BarChart>
             
+                    </div>
+            </div>
+            <div className='col-md-6'>
+            <h4 className='text-center text-danger'>Investment VS Revenue</h4>
+            <div className='d-flex justify-content-center'>
+            <AreaChart
+                width={350}
+                height={300}
+                data={data}
+                margin={{
+                    top: 10,
+                    right: 30,
+                    left: 0,
+                    bottom: 0,
+                }}
+                >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Area type="monotone" dataKey="investment" stroke="#ffc658" fill="#ffc658" />
+                <Area type="monotone" dataKey="revenue" stackId="1" stroke="#8884d8" fill="#8884d8" />
+                </AreaChart>
+            </div>
+            </div>
+            <div className='col-md-6'>
+            <h4 className='text-center text-danger'>Investment VS Revenue</h4>
+            <div className='d-flex justify-content-center'>
+            <PieChart className='' width={350} height={300}>
+                <Tooltip />
+                <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                </PieChart>
+            </div>
             </div>
         </div>
     );

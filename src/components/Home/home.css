@@ -1,14 +1,8 @@
-.text {
-    padding-top: 120px;
-}
-
 .headers {
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 140px;
-    padding-right: 140px;
     margin-bottom: 100px;
 }
 
