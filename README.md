@@ -1,12 +1,18 @@
-# [Live Site](https://lucent-kashata-03ee9c.netlify.app/)
+## Project name: MS Furniture
 
-[https://lucent-kashata-03ee9c.netlify.app/](https://lucent-kashata-03ee9c.netlify.app/)
+## Project Front-end git repository name:product-analysis-website
 
-## Everything that is on this website
+## [Live Website](https://lucent-kashata-03ee9c.netlify.app/)
 
-* I use five route in the navigation bar.
-* First of all i make a Home page.
-* In the bottom of the Home page i added three customers review.
-* Then i created a review page where i added all of my customers reviews.
-* Then i created dashboard page where i make tow chart. one of them is linechart and the others is barchart.
-* Then i created Blogs and About page.
+Live WebsiteLink: [https://lucent-kashata-03ee9c.netlify.app/](https://lucent-kashata-03ee9c.netlify.app/)
+
+## Project Overview:
+
+- Multiple Page React.js website.
+- Mobile Responsive.
+
+## Used Technology
+
+- React, React Bootstrap.
+- React Router DOM.
+- ReCharts.
